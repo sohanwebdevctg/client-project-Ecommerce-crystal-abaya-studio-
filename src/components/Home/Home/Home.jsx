@@ -1,4 +1,5 @@
 import Banner from "../Banner/Banner";
+import CustomersReviews from "../CustomersReviews/CustomersReviews";
 
 
 const Home = () => {
@@ -7,6 +8,9 @@ const Home = () => {
       {/* Banner section start */}
         <Banner></Banner>
       {/* Banner section end */}
+      {/* CustomersReviews start */}
+      <CustomersReviews></CustomersReviews>
+      {/* CustomersReviews end */}
     </div>
   );
 };
