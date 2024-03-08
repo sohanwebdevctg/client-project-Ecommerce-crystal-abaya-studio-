@@ -6,16 +6,18 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 import { Pagination, Navigation } from 'swiper/modules';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 const CustomersReviews = () => {
+
+  const [usersData, setUsersData] = useState([])
 
 
   // data fetch
   useEffect(() => {
     fetch('customersReviews.json')
     .then((res) => res.json())
-    .then((data) => console.log(data))
+    .then((data) => setUsersData(data))
   })
 
 
@@ -40,15 +42,15 @@ const CustomersReviews = () => {
           modules={[Pagination, Navigation]}
           className="mySwiper"
         >
-          <SwiperSlide>Slide 1</SwiperSlide>
-          <SwiperSlide>Slide 2</SwiperSlide>
-          <SwiperSlide>Slide 3</SwiperSlide>
-          <SwiperSlide>Slide 4</SwiperSlide>
-          <SwiperSlide>Slide 5</SwiperSlide>
-          <SwiperSlide>Slide 6</SwiperSlide>
-          <SwiperSlide>Slide 7</SwiperSlide>
-          <SwiperSlide>Slide 8</SwiperSlide>
-          <SwiperSlide>Slide 9</SwiperSlide>
+          {
+            usersData.map((data) => <SwiperSlide key={data.id}>
+              <div className='text-center mx-auto py-10'>
+                <p>{data.descriptions}</p>
+                <h4>{data.name}</h4>
+              </div>
+            </SwiperSlide>
+            )
+          }
           </Swiper>
         </div>
         {/* user details section end */}
