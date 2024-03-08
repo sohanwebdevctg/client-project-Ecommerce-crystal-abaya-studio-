@@ -1,5 +1,6 @@
 import Banner from "../Banner/Banner";
 import CustomersReviews from "../CustomersReviews/CustomersReviews";
+import HomeService from "../HomeService/HomeService";
 
 
 const Home = () => {
@@ -8,9 +9,12 @@ const Home = () => {
       {/* Banner section start */}
         <Banner></Banner>
       {/* Banner section end */}
-      {/* CustomersReviews start */}
+      {/* CustomersReviews section start */}
       <CustomersReviews></CustomersReviews>
-      {/* CustomersReviews end */}
+      {/* CustomersReviews section end */}
+      {/* HomeService section start */}
+      <HomeService></HomeService>
+      {/* HomeService section end */}
     </div>
   );
 };
