@@ -1,0 +1,21 @@
+.bannerCon{
+  background-image: url('../../../../public/banner/banner.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 2;
+}
+.bannerCon::before{
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0.3;
+  z-index: -1;
+}
