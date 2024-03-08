@@ -1,6 +1,7 @@
 import Banner from "../Banner/Banner";
 import CustomersReviews from "../CustomersReviews/CustomersReviews";
 import HomeService from "../HomeService/HomeService";
+import HowItWorks from "../HowItWorks/HowItWorks";
 
 
 const Home = () => {
@@ -15,6 +16,9 @@ const Home = () => {
       {/* HomeService section start */}
       <HomeService></HomeService>
       {/* HomeService section end */}
+      {/* HowItWorks section start */}
+      <HowItWorks></HowItWorks>
+      {/* HowItWorks section end */}
     </div>
   );
 };

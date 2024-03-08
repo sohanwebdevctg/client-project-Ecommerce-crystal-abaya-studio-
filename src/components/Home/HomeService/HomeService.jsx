@@ -15,7 +15,7 @@ const HomeService = () => {
   })
 
   return (
-    <div className="">
+    <div className="my-4">
       {/* homeService container section start */}
       <div className="container mx-auto">
         {/* content section start */}
