@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import homeService from '../../../../public/hoemService/hoemService.jpg'
+import homeService from '../../../../public/homeService/homeService.jpg'
 import { FaCheck } from "react-icons/fa";
 
 const HomeService = () => {
@@ -44,7 +44,7 @@ const HomeService = () => {
         {/* content section end */}
         {/* button section start */}
         <div className='mx-auto text-center my-10 md:my-14'>
-        <button className='text-[#ffffff] btn bg-[#000] btn-lg px-6 py-3 sm:px-7 sm:py-3 rounded-md inline-block  hover:shadow-red-300 hover:shadow-xl duration-500 text-base sm:text-base md:text-base lg:text-base'>WhatsApp for Service Details</button>
+          <button className='text-[#fff] btn bg-[#2c332f] btn-lg px-6 py-3 sm:px-7 sm:py-3 rounded-md inline-block  hover:shadow-red-200 hover:shadow-xl duration-500 text-base sm:text-base md:text-base lg:text-base'>WhatsApp for Service Details</button>
         </div>
         {/* button section end */}
       </div>
