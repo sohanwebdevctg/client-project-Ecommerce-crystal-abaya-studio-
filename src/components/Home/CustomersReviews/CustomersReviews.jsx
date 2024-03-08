@@ -1,4 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { FaStar } from "react-icons/fa";
 
 // Import Swiper styles
 import 'swiper/css';
@@ -46,6 +47,13 @@ const CustomersReviews = () => {
             usersData.map((data) => <SwiperSlide key={data.id}>
               <div className='text-center mx-auto py-10'>
                 <p>{data.descriptions}</p>
+                <ul className='flex justify-center items-center my-4'>
+                  <li><FaStar className='mx-auto text-center lg:text-2xl'></FaStar></li>
+                  <li><FaStar className='mx-auto text-center lg:text-2xl'></FaStar></li>
+                  <li><FaStar className='mx-auto text-center lg:text-2xl'></FaStar></li>
+                  <li><FaStar className='mx-auto text-center lg:text-2xl'></FaStar></li>
+                  <li><FaStar className='mx-auto text-center lg:text-2xl'></FaStar></li>
+                </ul>
                 <h4>{data.name}</h4>
               </div>
             </SwiperSlide>
